@@ -2,6 +2,8 @@
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{hyperref}
+\usepackage{fontspec}
+\setmainfont{Lato-Regular.ttf} 
 \hypersetup {
 	colorlinks=true,
 	linkcolor=blue,
@@ -9,15 +11,12 @@
 	urlcolor=blue,
 }
 \urlstyle{same}
+\begin{document}
 \title{GitNotes}
 \author{Charlie Jung}
 \thanks{Kalid Azad from \href{https://betterexplained.com/articles/a-visual-guide-to-version-control/}{A Visual Guide to Version Control}}
 \date{\today}
-
-\begin{document}
-
 \maketitle
-\newpage
 \begin{flushleft}
 
 \underline{Version Control:} \\
@@ -49,7 +48,7 @@ You can go back immediately to the last \textit{stable} version \\
 \textbf{Sandboxing:} Making a big change? Make temp changes in an isolated area before testing them out and checking in your changes. \\
 \par
 
-\textbf{Branching and Merging:} You can work on a new branch & merge later \\
+\textbf{Branching and Merging:} You can work on a new branch \& merge later \\
 \par
 
 \textbf{\underline{Language and Technical Jargon:}} \\
@@ -72,7 +71,7 @@ Begin Tracking with Version Control) \\
 \par
 
 \textbf{Check In:} Upload a file to a repository. \par
-File gets a new revision # and people can check the latest Revision out \\
+File gets a new revision \# and people can check the latest Revision out \\
 \par
 
 \textbf{Check In Message:}  A short message describing what has changed \\
@@ -285,10 +284,10 @@ svn copy to/revision to/tag \\
 \par
 
 Real Life Example: \par
-MainLine \rightarrow Stable Windows \par
+MainLine $\rightarrow$ Stable Windows \par
 Each part (UI, Networking) has a unique branch \par
 
-Reverse Integration: From branch \rightarrow trunk \\
+Reverse Integration: From branch $\rightarrow$ trunk \\
 \par
 
 \textbf{Forward-Integrate:} Receive Latest Patches from main into their own branch ("pull") \\
